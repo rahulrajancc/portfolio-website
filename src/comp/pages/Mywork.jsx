@@ -4,6 +4,7 @@ import ai from "../../img/ai-healthcare-nfc.png";
 import sign from "../../img/signLan.png";
 import resume from "../../img/resume.png";
 import objde from "../../img/objDe.png";
+import soci from "../../img/so.png";
 export default function Mywork() {
     const projects = [
            {
@@ -30,7 +31,7 @@ export default function Mywork() {
             id: 2,
             title: "Social Media Platform",
             description: "A full-featured social media application designed to connect people in an interactive and engaging way. Includes user authentication, real-time messaging, and personalized content feeds.",
-            image: '',
+            image: soci,
             technologies: ["React", "Firebase", "Node.js", "Socket.io"],
             github: "https://github.com/rahulrajancc/social-media-app",
             live: "#",
