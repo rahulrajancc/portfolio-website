@@ -1,65 +1,95 @@
 #tool_main{
-    
-   
- 
-    height: 1024px;
+    min-height: 100vh;
     width: 100%;
-    
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    font-family: 'Montserrat', sans-serif;
 }
 #tool_header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 34px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+#tool_header p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+}
+#tool_header hr{
+    width: 100px;
+    border: 2px solid #00d4ff;
+    border-radius: 2px;
 }
 .tools_item{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-  
-    gap: 1rem;
-    
-}
-.tools_item img{
-    height: auto;
-    width: 4rem;
-    margin: 1rem;
-    background-color: aliceblue;
-   
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 0 5rem;
+    padding: 0 2rem;
 }
 .tools{
     display: flex;
+    flex-direction: column;
     align-items: center;
-   border: 2px solid white;
-   border-radius: 23px;
-   margin: 6px;
-   background-color: rgb(255, 255, 255)
-
-
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tools:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+}
+.tools img{
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
 }
 .tools p{
-    color: black;
-    background-color: white;
+    color: #e0e0e0;
+    font-weight: 500;
+    text-align: center;
 }
 
-@media screen and (max-width: 1349px ) {
+@media screen and (max-width: 1349px) {
     .tools_item{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-      
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        
+        margin: 0 2rem;
     }
 }
 @media screen and (max-width: 960px) {
-
-   
+    #tool_main{
+        padding: 3rem 1rem;
+    }
+    #tool_header p{
+        font-size: 2rem;
+    }
     .tools_item{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-      
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        
+        margin: 0 1rem;
+    }
+    .tools{
+        padding: 1rem;
+    }
+    .tools img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .tools p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .tools_item{
+        grid-template-columns: 1fr;
     }
 }
