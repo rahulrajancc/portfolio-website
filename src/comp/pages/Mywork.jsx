@@ -5,6 +5,8 @@ import sign from "../../img/signLan.png";
 import resume from "../../img/resume.png";
 import objde from "../../img/objDe.png";
 import soci from "../../img/so.png";
+import iit from "../../img/image.png";
+import flem from "../../img/image copy.png";
 export default function Mywork() {
     const projects = [
            {
@@ -41,7 +43,7 @@ export default function Mywork() {
             id: 3,
             title: "AI Robot Dog",
             description: "An advanced multifunctional robot dog with AI capabilities including face recognition, gesture control, voice commands, and object manipulation. Built with computer vision and robotics.",
-            image: "",
+            image: iit,
             technologies: ["Python", "OpenCV", "Arduino", "Machine Learning"],
             github: "https://github.com/rahulrajancc/ai-robot-dog",
             live: "#",
@@ -112,12 +114,22 @@ export default function Mywork() {
             id: 10,
             title: "AI-Powered Water Monitoring and Prediction System",
             description: "Developed an AI/IoT-based Smart Water Monitoring System that tracks water level and quality (pH, TDS, turbidity) in real time, predicts low water conditions, and sends instant alerts with integrated live video monitoring for tank safety.",
-            image: "",
+            image: flem,
             technologies: ["Python", "Arduino", "IoT Sensors", "Machine Learning"],
             github: "https://github.com/rahulrajancc/ai-water-monitoring-prediction",
             live: "#",
             category: "IOT/AI"
-        }
+        },
+        {
+    id: 11,
+    title: "Autonomous Fire Fighting Robot using ESP32",
+    description: "Developed an IoT-based autonomous fire-fighting robot that detects flames using a flame sensor, avoids obstacles using an ultrasonic sensor, and automatically activates a water pump through a relay to extinguish fire. The system includes real-time alerting using a buzzer and intelligent navigation for efficient fire response.",
+    image: "",
+    technologies: ["ESP32", "Arduino IDE", "Ultrasonic Sensor", "Flame Sensor", "Relay Module", "Embedded Systems"],
+    github: "#",
+    live: "#",
+    category: "IOT/Embedded"
+}
        
     ];
 

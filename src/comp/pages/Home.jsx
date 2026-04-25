@@ -20,8 +20,8 @@ export default function Home() {
     const downloadCV = () => {
         // Create a link to download CV - you'll need to add your CV file to the public folder
         const link = document.createElement('a');
-        link.href = '/Rahul_Rajan_CV.pdf'; // Update this path to your CV file
-        link.download = 'Rahul_Rajan_CV.pdf';
+        link.href = '/Resume.pdf'; // Update this path to your CV file
+        link.download = 'Resume.pdf';
         link.click();
     };
 

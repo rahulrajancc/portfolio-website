@@ -1,6 +1,7 @@
 import '../styles/footer.css';
 import { useState } from 'react';
-
+import { db } from '../../firebase';
+import { collection, addDoc,serverTimestamp } from 'firebase/firestore';
 export default function Footer() {
     const [formData, setFormData] = useState({
         name: '',
@@ -15,12 +16,30 @@ export default function Footer() {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Here you would typically send the form data to a server
-        alert('Thank you for your message! I will get back to you soon.');
-        setFormData({ name: '', email: '', message: '' });
-    };
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        await addDoc(collection(db, "messages"), {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+            createdAt: serverTimestamp()
+        });
+
+        alert("Message sent successfully 🚀");
+
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+
+    } catch (error) {
+        console.error("Error adding document: ", error);
+        alert("Something went wrong ❌");
+    }
+};
 
     return(
         <footer id="footer_con">
