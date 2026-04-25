@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.7a58fdaa.css",
+    "main.js": "/portfolio-website/static/js/main.637b4100.js",
+    "static/js/453.843a6444.chunk.js": "/portfolio-website/static/js/453.843a6444.chunk.js",
+    "static/media/pic.png": "/portfolio-website/static/media/pic.674968ae71469b23f93f.png",
+    "static/media/image.png": "/portfolio-website/static/media/image.5bd822fed3b540fbc48d.png",
+    "static/media/image copy.png": "/portfolio-website/static/media/image copy.6d1e0bad6289fd55ce7e.png",
+    "static/media/objDe.png": "/portfolio-website/static/media/objDe.822868bb7693c5c72463.png",
+    "static/media/ai-healthcare-nfc.png": "/portfolio-website/static/media/ai-healthcare-nfc.cdaa70dfb3de2a6d745d.png",
+    "static/media/js.png": "/portfolio-website/static/media/js.5030f9b16b8c75fda375.png",
+    "static/media/so.png": "/portfolio-website/static/media/so.8bbae0adaac585fd4f0c.png",
+    "static/media/resume.png": "/portfolio-website/static/media/resume.8c35bda4a1032b5bef7c.png",
+    "static/media/signLan.png": "/portfolio-website/static/media/signLan.f03c3d30f16c4d020b01.png",
+    "static/media/pic.jpg": "/portfolio-website/static/media/pic.8396bbfcd7a9489682d8.jpg",
+    "static/media/physics.png": "/portfolio-website/static/media/physics.86c8d9eba03e29814d2a.png",
+    "static/media/hpic.jpg": "/portfolio-website/static/media/hpic.aefc473a10168420aec4.jpg",
+    "static/media/react.png": "/portfolio-website/static/media/react.9c2e65ebf9c62e78a495.png",
+    "static/media/arduino.png": "/portfolio-website/static/media/arduino.8f5562fee86bf42a890b.png",
+    "static/media/html .png": "/portfolio-website/static/media/html .771c70c2006a4aa0109b.png",
+    "static/media/css.png": "/portfolio-website/static/media/css.2d4a4a440115a46cb30d.png",
+    "static/media/op.png": "/portfolio-website/static/media/op.dc67c2e1013e8447f4af.png",
+    "static/media/exprress.png": "/portfolio-website/static/media/exprress.c0a5938442260d76c0f2.png",
+    "index.html": "/portfolio-website/index.html",
+    "main.7a58fdaa.css.map": "/portfolio-website/static/css/main.7a58fdaa.css.map",
+    "main.637b4100.js.map": "/portfolio-website/static/js/main.637b4100.js.map",
+    "453.843a6444.chunk.js.map": "/portfolio-website/static/js/453.843a6444.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a58fdaa.css",
+    "static/js/main.637b4100.js"
+  ]
+}
